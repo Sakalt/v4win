@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音声編集ソフト</title>
+</head>
+<body>
+    <h1>音声編集ソフト</h1>
+
+    <label for="instrumentSelect">楽器選択:</label>
+    <select id="instrumentSelect">
+        <option value="windows7-error">Windows 7 エラー音</option>
+        <option value="windows8-start">Windows 8 起動音</option>
+        <option value="pikachu">ピカチュートーン</option>
+        <option value="windowsxp-error">Windows XP エラー音</option>
+        <option value="windows7-start">Windows 7 起動音</option>
+        <option value="windows11-start">Windows 11 起動音</option>
+        <option value="drum">ドラム音</option>
+        <option value="other">その他</option>
+    </select>
+    
+    <label for="pitchControl">ピッチ変更:</label>
+    <input type="range" id="pitchControl" min="-12" max="12" value="0">
+    <span id="pitchValue">0</span> 半音
+    <br><br>
+    <button id="playButton">再生</button>
+    <button id="addSyllableButton">音節を追加</button>
+    <button id="downloadButton">ダウンロード</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
